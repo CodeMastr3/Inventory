@@ -13,13 +13,13 @@ int main()
   do
   {
     cout<<"\nMENU\n====\n(S)ell item\n(Q)uit\n>";
-    cin>>choice;
+    cin>>choice; // Gather user choice of whether to keep store open or not
     if( choice == 'S' || choice == 's' )
     {
       stock.sell();
       cout<<stock<<"\n";
     }
-  }while( choice != 'q' && choice != 'Q');
+  }while( choice != 'q' && choice != 'Q'); // Loop to keep store open
 
   return 0;
 }
